@@ -158,12 +158,42 @@ cursor: pointer;
     background-color: #404BBF;
 }
 
+.second-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.second-list {
+    display: flex;
+    gap: 24px;
+}
+
+.page-list {
+    background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+}
+
 .first-list-title {
 font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2E2F42;
+margin-bottom: 8px;
 }
 
 .page-list-item {
@@ -188,9 +218,7 @@ text-transform: capitalize;
 color: #2E2F42;
 }
 
-.page-list {
-    background-color: #FFFFFF;
-}
+
 
 .page-footer {
     background-color: #2e2f42;
