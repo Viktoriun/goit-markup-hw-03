@@ -187,7 +187,7 @@ cursor: pointer;
 }
 
 .page {
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    width: calc((100% - 72px) / 4);
 }
 
 .first-list-title {
@@ -207,8 +207,19 @@ letter-spacing: 0.02em;
 color: #434455;
 }
 
-.three-section {
+.third-section {
     background-color: #F4F4FD
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.third-list {
+    display: flex;
+    gap: 24px;
+}
+
+.third-page-list {
+    width: calc((100% - 72px) / 4);
 }
 
 .page-our-team-portfolio {
@@ -219,6 +230,7 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: #2E2F42;
+margin-bottom: 72px;
 }
 
 
