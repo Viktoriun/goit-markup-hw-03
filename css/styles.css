@@ -183,7 +183,11 @@ cursor: pointer;
 
 .page-list {
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
+    
+}
+
+.page {
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .first-list-title {
