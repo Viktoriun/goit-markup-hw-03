@@ -259,7 +259,7 @@ margin-bottom: 72px;
     row-gap: 48px;
 }
 
-.ffour-page-list {
+.four-page-list {
     width: calc((100% - 48px) / 3);
 }
 
