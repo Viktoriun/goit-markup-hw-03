@@ -276,6 +276,8 @@ margin-bottom: 72px;
 
 .page-footer {
     background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .second-accent {
@@ -293,7 +295,5 @@ font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #F4F4FD;
-padding-top: 100px;
-padding-bottom: 100px;
 max-width: 264px;
 }
