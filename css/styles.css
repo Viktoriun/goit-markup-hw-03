@@ -17,39 +17,47 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    margin-top: 0;
-    margin-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
-/* Header */
-
-.page-header {
-    border-bottom: 1px solid #e7e9fc;
-}
-
-.div-header {
-    display: flex;
+ul, ol {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
 }
 
 .container {
     width: 1158px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Nav */
+/* ---Header--- */
+
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.div-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1158px;
+}
+
+/* --Nav-- */
 
 .page-nav {
     display: flex;
     align-items: center;
 }
 
-/* Logotype */
-
-.logo {
-    margin-right: 76px;
-}
+/* --Logotype-- */
 
 .main-logotype {
     font-family: 'Raleway', sans-serif;
@@ -59,28 +67,31 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
+    align-items: center;
 }
 
 .accent {
     color: #2E2F42;
 }
 
-/* Logotype */
-/* Menu */
+/* --Logotype-- */
+/* --Menu-- */
 
 .menu {
     display: flex;
-    gap: 40px;
+    column-gap: 40px;
+    align-items: center;
 }
 
 .link {
-font-size: 16px;
-font-weight: 500;
-line-height: 1.5; 
-letter-spacing: 0.02em;
-color: #2E2F42;
-padding-top: 24px;
-padding-bottom: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .link:hover,
@@ -88,8 +99,8 @@ padding-bottom: 24px;
     color: #404bbf;
 }
 
-/* Menu */
-/* Adress */
+/* --Menu-- */
+/* --Adress-- */
 
 .page-adress {
     font-style: normal;
@@ -97,16 +108,17 @@ padding-bottom: 24px;
 
 .adress-item {
     display: flex;
-    gap: 40px;
+    column-gap: 40px;
+    align-items: center;
 }
 
 .page-adress .page-contacts {
-font-size: 16px;
-font-weight: 400;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
-display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    display: flex;
 }
 
 .page-contacts:focus,
@@ -115,10 +127,8 @@ display: flex;
     color: #404bbf;
 }
 
-/* Adress */
-/* Nav */
-/* Header */
-/* Main */
+/* ---Adress, Nav, Header--- */
+/* ---Main, First Section--- */
 
 .first-section {
     background-color: #2E2F42;
@@ -126,47 +136,56 @@ display: flex;
     padding-bottom: 188px;
 }
 
+/* --Main Title-- */
+
 .main-title {
-text-align: center;
-font-size: 56px;
-font-weight: 700;
-line-height: 1.07;
-letter-spacing: 0.02em;
-color: #FFFFFF;
-max-width: 496px;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 
-.button {
-background-color: #4D5AE5;
-font-family: "Roboto", sans-serif;    
-font-size: 16px;
-font-weight: 500;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color: #FFFFFF;
-cursor: pointer;
-}
+/* --Button-- */
 
 .main-button {
+    background-color: #4D5AE5;
+    font-family: "Roboto", sans-serif;    
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
     max-width: 496px;
     display: block;
     min-width: 169px;
     height: 56px;
     border: none;
-    background-color: #4d5ae5;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.button:hover,
-.button:focus {
+.main-button:hover,
+.main-button:focus {
     background-color: #404BBF;
 }
+
+/* ---Button, Main Title, First Section--- */
+/* ---Second Section--- */
 
 .second-section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
+/* --Second Title-- */
 
 .visually-hidden {
   position: absolute;
@@ -181,6 +200,7 @@ cursor: pointer;
   overflow: hidden;
 }
 
+/* --Second List-- */
 .second-list {
     display: flex;
     gap: 24px;
@@ -215,9 +235,8 @@ color: #434455;
 text-align: center;
 }
 
-.first-list {
-    text-align: center;
-}
+/* ---Second List, Second Title, Second Section--- */
+/* ---Third Section--- */
 
 .third-section {
     padding-top: 120px;
@@ -225,6 +244,21 @@ text-align: center;
     background-color: #F4F4FD
 
 }
+
+/* --Third Title--  */
+
+.page-our-team-portfolio {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+    margin-bottom: 72px;
+}
+
+/* --Third List-- */
 
 .third-list {
     display: flex;
@@ -234,28 +268,24 @@ text-align: center;
 .third-page-list {
     flex-basis: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
-}
-
-.four-section {
-    padding-top: 120px; 
-    padding-bottom: 120px;
-}
-
-.page-our-team-portfolio {
-text-align: center;
-font-size: 36px;
-font-weight: 700;
-line-height: 1.11;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-color: #2E2F42;
-margin-bottom: 72px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .first-div-item {
     padding-top: 32px;
     padding-bottom: 32px;
 }
+
+/* ---Third List, Third Title, Third Section--- */
+/* ---Four Section--- */
+
+.four-section {
+    padding-top: 120px; 
+    padding-bottom: 120px;
+}
+
+/* --Four List-- */
 
 .four-list {
     display: flex;
@@ -270,10 +300,32 @@ margin-bottom: 72px;
 
 .four-container {
     padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
+    border: 1px solid #E7E9FC;
+    background: #FFFFFF;
+
 }
 
+.four-list-title {
+    border-top: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.four-page-list-item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* ---Four List, Four Section--- */
+/* ---Page Footer--- */
 
 .page-footer {
     background-color: #2e2f42;
@@ -291,10 +343,10 @@ margin-bottom: 72px;
 }
 
 .footer-paragraph {
-font-size: 16px;
-font-weight: 400;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #F4F4FD;
-max-width: 264px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    max-width: 264px;
 }
