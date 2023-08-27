@@ -300,8 +300,8 @@ text-align: center;
 
 .four-container {
     padding: 32px 16px;
-    border-top: none;
     border: 1px solid #E7E9FC;
+    border-top: none;
     background: #FFFFFF;
 }
 
