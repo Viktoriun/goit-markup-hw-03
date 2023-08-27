@@ -80,7 +80,7 @@ ul, ol {
 
 .menu {
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
     align-items: center;
 }
 
@@ -108,7 +108,7 @@ ul, ol {
 
 .adress-item {
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
     align-items: center;
 }
 
@@ -300,6 +300,7 @@ text-align: center;
 
 .four-container {
     padding: 32px 16px;
+    border-top: none;
     border: 1px solid #E7E9FC;
     background: #FFFFFF;
 }
